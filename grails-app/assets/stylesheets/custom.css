@@ -1,0 +1,1393 @@
+.worklog {
+    border: 1px solid #673AB7;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    /*box-shadow: 2px 2px 5px gray;*/
+    margin-top: 45px;
+}
+
+.worklog.Task, .worklog.Subtask {
+    border-color: #2196F3;
+}
+
+.worklog.Task .user div, .worklog.Subtask .user div {
+    border-color: #2196F3;
+}
+
+.worklog.Task .issueLink, .worklog.Subtask .issueLink {
+    background: #BBDEFB;
+}
+
+.worklog.Task .issueDetails, .worklog.Subtask .issueDetails {
+    background: #2196F3;
+}
+
+.worklog.Documentation, .worklog.Documentation_SubTask {
+    border-color: #9C27B0;
+}
+
+.worklog.Documentation .user div, .worklog.Documentation_SubTask .user div {
+    border-color: #9C27B0;
+}
+
+.worklog.Documentation .issueLink, .worklog.Documentation_SubTask .issueLink {
+    background: #E1BEE7;
+}
+
+.worklog.Documentation .issueDetails, .worklog.Documentation_SubTask .issueDetails {
+    background: #9C27B0;
+}
+
+.worklog.Defect, .worklog.Defect_SubTask {
+    border-color: #F44336;
+}
+
+.worklog.Defect .user div, .worklog.Defect_SubTask .user div {
+    border-color: #F44336;
+}
+
+.worklog.Defect .issueLink, .worklog.Defect_SubTask .issueLink {
+    background: #FFCDD2;
+}
+
+.worklog.Defect .issueDetails, .worklog.Defect_SubTask .issueDetails {
+    background: #F44336;
+}
+
+.worklog.Bugfix, .worklog.Bugfix_SubTask {
+    border-color: #FF9800;
+}
+
+.worklog.Bugfix .user div, .worklog.Bugfix_SubTask .user div {
+    border-color: #FF9800;
+}
+
+.worklog.Bugfix .issueLink, .worklog.Bugfix_SubTask .issueLink {
+    background: #FFE0B2;
+}
+
+.worklog.Bugfix .issueDetails, .worklog.Bugfix_SubTask .issueDetails {
+    background: #FF9800;
+}
+
+.worklog.Pairing, .worklog.Pairing_SubTask {
+    border-color: #4CAF50;
+}
+
+.worklog.Pairing .user div, .worklog.Pairing_SubTask .user div {
+    border-color: #4CAF50;
+}
+
+.worklog.Pairing .issueLink, .worklog.Pairing_SubTask .issueLink {
+    background: #C8E6C9;
+}
+
+.worklog.Pairing .issueDetails, .worklog.Pairing_SubTask .issueDetails {
+    background: #4CAF50;
+}
+
+.worklog.Story, .worklog.Pairing_SubTask {
+    border-color: #009688;
+}
+
+.worklog.Story .user div, .worklog.Pairing_SubTask .user div {
+    border-color: #009688;
+}
+
+.worklog.Story .issueLink, .worklog.Pairing_SubTask .issueLink {
+    background: #B2DFDB;
+}
+
+.worklog.Story .issueDetails, .worklog.Pairing_SubTask .issueDetails {
+    background: #009688;
+}
+
+.worklog.Test, .worklog.Test_SubTask {
+    border-color: #8BC34A;
+}
+
+.worklog.Test .user div, .worklog.Test_SubTask .user div {
+    border-color: #8BC34A;
+}
+
+.worklog.Test .issueLink, .worklog.Test_SubTask .issueLink {
+    background: #DCEDC8;
+}
+
+.worklog.Test .issueDetails, .worklog.Test_SubTask .issueDetails {
+    background: #8BC34A;
+}
+
+.worklog.Development, .worklog.Development_SubTask {
+    border-color: #00BCD4;
+}
+
+.worklog.Development .user div, .worklog.Development_SubTask .user div {
+    border-color: #00BCD4;
+}
+
+.worklog.Development .issueLink, .worklog.Development_SubTask .issueLink {
+    background: #B2EBF2;
+}
+
+.worklog.Development .issueDetails, .worklog.Development_SubTask .issueDetails {
+    background: #00BCD4;
+}
+
+.worklog .user {
+    margin-top: -35px;
+    margin-bottom: 10px;
+}
+
+.worklog .user div {
+    background: white;
+    display: inline-block;
+    border-radius: 24px;
+    border: 1px solid #673AB7;
+}
+
+.worklog .timeSpent {
+    font-weight: bold;
+    display: inline-block;
+    background: #eeeeee;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+table {
+    border-width: 0;
+}
+
+table td {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.user a {
+    display: inline-block;
+    margin-right: 24px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.user.center a {
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+.user img {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+table td.other {
+    line-height: 48px;
+}
+
+.user.center {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.started {
+    font-size: 12px;
+    display: inline-block;
+}
+
+table .timeSpent {
+    font-weight: bold;
+    line-height: 48px;
+    text-align: right
+}
+
+table .timeSpent.center {
+    text-align: center;
+}
+
+.comment {
+    padding: 10px;
+}
+
+.comment ul, .comment ol {
+    padding-left: 20px;
+}
+
+.issue {
+    background: #f4f4f4;
+    margin: -10px;
+    margin-top: 10px;
+    border-radius: 0 0 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.issue a {
+    text-decoration: none;
+}
+
+.nav-tabs {
+    margin-top: 20px;
+}
+
+* {
+    text-shadow: none !important;
+}
+
+.tag {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+tbody td, thead td {
+    white-space: nowrap;
+    /*padding: 0 !important;*/
+}
+
+body {
+    background: #ECEFF1;
+}
+
+.row {
+    padding: 0;
+}
+
+.DTFC_LeftBodyLiner {
+    overflow-x: hidden;
+}
+
+thead tr td, thead tr td *, thead tr td *:hover, .dataTables_scrollHead, .dataTables_scrollHead * {
+    color: white;
+    vertical-align: bottom;
+}
+
+.dataTables_wrapper {
+    text-align: right;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    margin-right: 180px;
+}
+
+.dataTables_wrapper .btn-group {
+    padding-top: 10px;
+    margin-bottom: -70px;
+}
+
+.dataTables_wrapper .row + .row {
+    padding: 0;
+}
+
+.dataTables_wrapper .row + .row + .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.dataTables_wrapper .dataTables_info {
+    padding: 5px;
+    padding-right: 20px;
+}
+
+h2 {
+    background: #1E88E5;
+    color: white;
+    padding: 10px 20px;
+    margin: -25px -25px 20px;
+}
+
+h2.tableHeader {
+    margin-top: 60px;
+    margin-bottom: -55px;
+}
+
+.issueDetails {
+    background-color: #673AB7;
+    padding: 5px 10px;
+    color: white;
+    font-weight: normal;
+}
+
+.issueLink {
+    background: #D1C4E9;
+    padding: 5px 10px;
+
+}
+
+#Client_wrapper thead tr td,
+#Client_wrapper thead tr td *,
+#Client_wrapper thead tr td *:hover,
+#Client_wrapper .dataTables_scrollHead,
+#Client_wrapper .dataTables_scrollHead * {
+    background-color: #673AB7;
+}
+
+#Client_wrapper .dataTables_info {
+    background: #D1C4E9;
+}
+
+#Project_wrapper thead tr td,
+#Project_wrapper thead tr td *,
+#Project_wrapper thead tr td *:hover,
+#Project_wrapper .dataTables_scrollHead,
+#Project_wrapper .dataTables_scrollHead * {
+    background-color: #009688;
+}
+
+#Project_wrapper .dataTables_info {
+    background: #B2DFDB;
+}
+
+#Component_wrapper thead tr td,
+#Component_wrapper thead tr td *,
+#Component_wrapper thead tr td *:hover,
+#Component_wrapper .dataTables_scrollHead,
+#Component_wrapper .dataTables_scrollHead * {
+    background-color: #3F51B5;
+}
+
+#Component_wrapper .dataTables_info {
+    background: #C5CAE9;
+}
+
+#Issue_Type_wrapper thead tr td,
+#Issue_Type_wrapper thead tr td *,
+#Issue_Type_wrapper thead tr td *:hover,
+#Issue_Type_wrapper .dataTables_scrollHead,
+#Issue_Type_wrapper .dataTables_scrollHead * {
+    background-color: #E91E63;
+}
+
+#Issue_Type_wrapper .dataTables_info {
+    background: #F8BBD0;
+}
+
+#DataTables_Table_4_wrapper thead tr td,
+#DataTables_Table_4_wrapper thead tr td *,
+#DataTables_Table_4_wrapper thead tr td *:hover,
+#DataTables_Table_4_wrapper .dataTables_scrollHead,
+#DataTables_Table_4_wrapper .dataTables_scrollHead * {
+    background-color: #FF9800;
+}
+
+#DataTables_Table_4_wrapper .dataTables_info {
+    background: #FFE0B2;
+}
+
+.filterPanel {
+    background: #ECEFF1;
+    padding: 20px;
+    /*margin-top: 20px;*/
+    width: 300px;
+}
+
+.filterPanel .switch-label {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.filterPanel .k-switch {
+    float: right;
+    margin-top: 10px;
+}
+
+.gantt_message_area.dhtmlx_message_area {
+    display: none;
+}
+
+th {
+    background: none;
+}
+
+.field {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.field label {
+    font-weight: normal;
+    color: #607D8B;
+    display: block;
+    padding-left: 3px;
+    margin-bottom: -8px;
+    font-size: 14px;
+}
+
+.field input[type=text], .field input[type=password], .field textarea {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #607D8B;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #f5f5f5;
+}
+
+.field textarea {
+    padding: 7px;
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
+.field table {
+    margin-top: 15px;
+}
+
+.field table th {
+    background-color: #009688;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.field table tr:nth-child(odd) td {
+    background: #ECEFF1
+}
+
+.field table tr:nth-child(odd) td textarea {
+    background: white;
+}
+
+/* input[type=submit], input[type=button] {*/
+/*    background: #673AB7;*/
+/*    border: none;*/
+/*    min-width: 80px;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*}*/
+
+.selectize-input {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #607D8B !important;
+    border-radius: 0 !important;
+    margin-top: 5px;
+}
+
+.selectize-input .item {
+    background: #00BCD4 !important;
+    color: white !important;
+    padding-right: 7px !important;
+    padding-left: 7px !important;
+}
+
+.row {
+    max-width: 100% !important;
+}
+
+.highcharts-credits {
+    display: none;
+}
+
+.header {
+    background-color: #ffffff;
+    height: 67px;
+    border-bottom: 5px solid #37474F;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+
+.header .logo {
+    display: block;
+    margin: 10px 10px 10px 20px;
+    /*float: left;*/
+}
+
+.header .logo img {
+    height: 32px;
+    /*float: left;*/
+}
+
+#menu {
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.header .logo span {
+    line-height: 48px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #9C27B0;
+    font-weight: bold;
+    border-left: 1px solid #3F51B5;
+    padding-left: 17px;
+}
+
+.navbar {
+    min-height: 10px;
+}
+
+.task {
+    border: 1px solid #673AB7;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    /*box-shadow: 2px 2px 5px gray;*/
+    margin-top: 45px;
+}
+
+.task.Task, .task.Subtask {
+    border-color: #2196F3;
+}
+
+.task.Task .issue div, .task.Subtask .issue div {
+    border-color: #2196F3;
+}
+
+.task.Task .issueLink, .task.Subtask .issueLink {
+    background: #BBDEFB;
+}
+
+.task.Task .issueDetails, .task.Subtask .issueDetails {
+    background: #2196F3;
+}
+
+.task.Documentation, .task.Documentation_SubTask {
+    border-color: #9C27B0;
+}
+
+.task.Documentation .issue div, .task.Documentation_SubTask .issue div {
+    border-color: #9C27B0;
+}
+
+.task.Documentation .issueLink, .task.Documentation_SubTask .issueLink {
+    background: #E1BEE7;
+}
+
+.task.Documentation .issueDetails, .task.Documentation_SubTask .issueDetails {
+    background: #9C27B0;
+}
+
+.task.Defect, .task.Defect_SubTask {
+    border-color: #F44336;
+}
+
+.task.Defect .issue div, .task.Defect_SubTask .issue div {
+    border-color: #F44336;
+}
+
+.task.Defect .issueLink, .task.Defect_SubTask .issueLink {
+    background: #FFCDD2;
+}
+
+.task.Defect .issueDetails, .task.Defect_SubTask .issueDetails {
+    background: #F44336;
+}
+
+.task.Bugfix, .task.Bugfix_SubTask {
+    border-color: #FF9800;
+}
+
+.task.Bugfix .issue div, .task.Bugfix_SubTask .issue div {
+    border-color: #FF9800;
+}
+
+.task.Bugfix .issueLink, .task.Bugfix_SubTask .issueLink {
+    background: #FFE0B2;
+}
+
+.task.Bugfix .issueDetails, .task.Bugfix_SubTask .issueDetails {
+    background: #FF9800;
+}
+
+.task.Pairing, .task.Pairing_SubTask {
+    border-color: #4CAF50;
+}
+
+.task.Pairing .issue div, .task.Pairing_SubTask .issue div {
+    border-color: #4CAF50;
+}
+
+.task.Pairing .issueLink, .task.Pairing_SubTask .issueLink {
+    background: #C8E6C9;
+}
+
+.task.Pairing .issueDetails, .task.Pairing_SubTask .issueDetails {
+    background: #4CAF50;
+}
+
+.task.Story, .task.Pairing_SubTask {
+    border-color: #009688;
+}
+
+.task.Story .issue div, .task.Pairing_SubTask .issue div {
+    border-color: #009688;
+}
+
+.task.Story .issueLink, .task.Pairing_SubTask .issueLink {
+    background: #B2DFDB;
+}
+
+.task.Story .issueDetails, .task.Pairing_SubTask .issueDetails {
+    background: #009688;
+}
+
+.task.Test, .task.Test_SubTask {
+    border-color: #8BC34A;
+}
+
+.task.Test .issue div, .task.Test_SubTask .issue div {
+    border-color: #8BC34A;
+}
+
+.task.Test .issueLink, .task.Test_SubTask .issueLink {
+    background: #DCEDC8;
+}
+
+.task.Test .issueDetails, .task.Test_SubTask .issueDetails {
+    background: #8BC34A;
+}
+
+.task.Development, .task.Development_SubTask {
+    border-color: #00BCD4;
+}
+
+.task.Development .issue div, .task.Development_SubTask .issue div {
+    border-color: #00BCD4;
+}
+
+.task.Development .issueLink, .task.Development_SubTask .issueLink {
+    background: #B2EBF2;
+}
+
+.task.Development .issueDetails, .task.Development_SubTask .issueDetails {
+    background: #00BCD4;
+}
+
+.task .issue {
+    line-height: 48px;
+    padding-right: 10px;
+    background: none;
+    margin: -35px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.task .issue a {
+    font-weight: bold;
+}
+
+.task .issue div {
+    background: white;
+    display: inline-block;
+    border-radius: 24px;
+    border: 1px solid #673AB7;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.task .timeSpent {
+    font-weight: bold;
+    display: inline-block;
+    background: #eeeeee;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+.task .issueDetails {
+    margin: 0 -10px -10px;
+}
+
+.task .user {
+    margin-top: 10px;
+}
+
+.task .worklogs {
+    padding-left: 0;
+    border-left: 2px solid #eeeeee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+#gantt {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.k-grid-header th.k-header {
+    white-space: pre-wrap;
+}
+
+.k-grid-content tr td {
+    /*white-space: pre-wrap;*/
+}
+
+.gantt_cal_quick_info {
+    width: auto !important;
+}
+
+.gantt_cal_qi_title {
+    padding-right: 12px !important;
+}
+
+.gantt_cal_qi_title h2 {
+    text-wrap: normal;
+}
+
+.summary-row,
+.summary-row.odd {
+    background-color: #EEEEEE;
+    font-weight: bold;
+}
+
+.gantt_grid div,
+.gantt_data_area div {
+    font-size: 12px;
+}
+
+.summary-bar {
+    opacity: 0.4;
+}
+
+.gantt_grid_scale .gantt_grid_head_cell,
+.gantt_task .gantt_task_scale .gantt_scale_cell {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.resource_marker {
+    text-align: center;
+}
+
+.resource_marker div {
+    width: 28px;
+    height: 28px;
+    line-height: 29px;
+    display: inline-block;
+    border-radius: 15px;
+    color: #FFF;
+    margin: 3px;
+}
+
+.resource_marker.workday_ok div {
+    background: #51c185;
+}
+
+.resource_marker.workday_over div {
+    background: #ff8686;
+}
+
+
+.owner-label {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    background: #e6e6e6;
+    color: #6f6f6f;
+    margin: 0 3px;
+    font-weight: bold;
+}
+
+.gantt_tooltip {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.weekend {
+    background: #f4f7f4;
+}
+
+.gantt_selected .weekend {
+    background: #f7eb91;
+}
+
+.gantt-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.gantt-task-link, .gantt-task-link:hover, .gantt-task-link:active, .gantt-task-link:focus {
+    /*color: #673AB7;*/
+    /*border-color: #673AB7;*/
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0 5px;
+    line-height: 24px;
+    /*opacity: 0.7;*/
+    color: #2196F3;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.gantt-task-link:hover {
+    opacity: 1;
+}
+
+.gantt-task-link.Task, .gantt-task-link.Sub-task {
+    color: #2196F3;
+    border-color: #2196F3;
+}
+
+.gantt-task-link.Documentation, .gantt-task-link.Documentation_Sub-Task {
+    color: #9C27B0;
+    border-color: #9C27B0;
+}
+
+.gantt-task-link.Defect, .gantt-task-link.Defect_Sub-Task {
+    color: #F44336;
+    border-color: #F44336;
+}
+
+.gantt-task-link.Bugfix, .gantt-task-link.Bugfix_Sub-Task {
+    color: #FF9800;
+    border-color: #FF9800;
+}
+
+.gantt-task-link.Pairing, .gantt-task-link.Pairing_Sub-Task {
+    color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.gantt-task-link.Story, .gantt-task-link.Pairing_Sub-Task {
+    color: #009688;
+    border-color: #009688;
+}
+
+.gantt-task-link.Test, .gantt-task-link.Test_Sub-Task {
+    color: #8BC34A;
+    border-color: #8BC34A;
+}
+
+.gantt-task-link.Development, .gantt-task-link.Development_Sub-Task {
+    color: #00BCD4;
+    border-color: #00BCD4;
+}
+
+.gantt_tree_icon.gantt_file, .gantt_tree_icon.gantt_folder_open, .gantt_tree_icon.gantt_folder_closed {
+    display: none;
+}
+
+.priority-icon {
+    width: 16px;
+}
+
+.status-icon {
+    /*width: 16px;*/
+}
+
+#content {
+    padding: 15px 15px 15px 0;
+    background: #ECEFF1;
+}
+
+.filter-table {
+    max-width: 100%;
+    width: 0;
+    margin-left: -15px;
+}
+
+.filter-table td {
+    white-space: normal !important;
+    padding: 0;
+}
+
+.expander {
+    padding-top: 20px;
+}
+
+.expander-button {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: inline-block;
+    background: #78909C;
+    color: white;
+    padding: 10px 2px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.fullscreen .filter-column {
+    display: none;
+}
+
+.main-body {
+    width: 100%;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.filter-column {
+    padding: 0;
+    white-space: normal !important;
+    /*transition-property: font-size;*/
+    transition-duration: 2s;
+    transition-delay: 0s;
+    width: 300px;
+}
+
+.body-column {
+    padding: 0;
+    transition-duration: 2s;
+    transition-delay: 0s;
+    /*padding-right: 15px;*/
+}
+
+.expander-cell {
+    padding: 0;
+    padding-right: 15px;
+    width: 45px;
+    box-sizing: border-box;
+}
+
+.gantt_control {
+    background: #ECEFF1;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.task-info span {
+    /*background-color: #ECEFF1;*/
+    color: #37474F;
+    display: inline-block;
+    /*margin-right: 5px;*/
+    margin-top: 7px;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+.task-info h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.task-info .priority {
+    float: right;
+}
+
+.task-info .assignee {
+    float: right;
+    margin-top: 10px;
+}
+
+.task-info .status {
+    margin-top: 10px;
+}
+
+.estimates {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 5px;
+    background-color: #ECEFF1;
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+.meta-dates {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 15px;
+    /*background-color: #ECEFF1;*/
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+.gantt_cal_qi_controls .gantt_menu_icon {
+    display: none;
+    text-align: center;
+}
+
+.gantt_cal_qi_controls .gantt_qi_big_icon {
+    padding: 0 10px;
+    min-width: 40px;
+}
+
+.gantt_cal_qi_content {
+    width: 500px;
+    padding: 2px !important;
+}
+
+.task-description {
+    padding: 13px;
+    white-space: normal;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.task-description ul, .task-description ol {
+    padding-left: 15px;
+}
+
+.red .gantt_cell,
+.red .gantt_task_cell {
+    background-color: #FFEBEE;
+}
+
+.odd.red .gantt_cell,
+.odd.red .gantt_task_cell {
+    background-color: #FFCDD2;
+}
+
+.red:hover .gantt_cell,
+.red:hover .gantt_task_cell {
+    background-color: #f7eb91;
+}
+
+.odd.red:hover .gantt_cell,
+.odd.red:hover .gantt_task_cell {
+    background-color: #f7eb91;
+}
+
+.gantt_selected.red .gantt_cell,
+.gantt_selected.red .gantt_task_cell {
+    background: #f7eb91;
+}
+
+.gantt_control input {
+    min-width: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.bar-project {
+    border: 0px solid #7E57C2 !important;
+    color: #7E57C2 !important;
+    background: #7E57C2 !important;
+    box-shadow: none !important;
+}
+
+.bar-project .gantt_task_progress {
+    background: #512DA8 !important;
+}
+
+.bar-client {
+    border: 0px solid #26A69A !important;
+    color: #26A69A !important;
+    background: #26A69A !important;
+    box-shadow: none !important;
+}
+
+.bar-client .gantt_task_progress {
+    background: #00796B !important;
+}
+
+.bar-task {
+    border: 0px solid #42A5F5 !important;
+    color: #42A5F5 !important;
+    background: #42A5F5 !important;
+    box-shadow: none !important;
+}
+
+.bar-task .gantt_task_progress {
+    background: #1976D2 !important;
+}
+
+
+.bar-task.gantt_critical_task .gantt_task_progress {
+    background: #C62828 !important;
+    color: #FFCDD2;
+}
+
+.link {
+    color: #2196F3 !important;
+    text-decoration: underline !important;
+}
+
+.link:hover {
+    text-decoration: none !important;
+}
+
+.sync-status {
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.sync-status span {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.gantt-fullscreen {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    font-size: 32px;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+    text-align: center;
+    -webkit-transition: background-color 0.5s, opacity 0.5s;
+    transition: background-color 0.5s, opacity 0.5s;
+}
+
+.gantt-fullscreen:hover {
+    background: rgba(150, 150, 150, 0.5);
+    opacity: 1;
+}
+
+.gantt_critical_task {
+    background-color: #E53935 !important;
+    border-color: #9d3a3a !important;
+}
+
+.k-toolbar {
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: none;
+}
+
+.gantt_cal_qi_title {
+    width: 500px;
+    white-space: normal;
+}
+
+.small-container {
+    /*display: inline-block;*/
+    margin: auto;
+    padding: 50px 100px;
+}
+
+.small-container p {
+    padding: 10px;
+}
+
+
+.small-container p input {
+    display: block;
+}
+
+.small-container p input[type=text],
+.small-container p input[type=password] {
+    min-width: 300px;
+    border-width: 0 !important;
+    border-bottom: 1px solid #607D8B !important;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.error {
+    border-top: 1px solid #D32F2F;
+    border-bottom: 1px solid #D32F2F;
+    background-color: #FFCDD2;
+    padding: 10px;
+}
+
+.info {
+    color: white;
+    background-color: #2196F3;
+    padding: 10px;
+    font-size:18px;
+    margin-top:20px;
+}
+
+.success {
+    color: white;
+    background-color: #388E3C;
+    padding: 10px;
+    font-size:18px;
+    margin-top:20px;
+}
+
+.small-container h1 {
+    margin-bottom: 20px;
+}
+
+.list-container {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-bottom: 30px !important;
+}
+
+.list-container h1 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/*.k-edit-form-container .k-edit-buttons {*/
+/*    margin-right: -15px;*/
+/*    margin-left: -15px;*/
+/*}*/
+
+/*.k-edit-form-container {*/
+/*    width: auto !important;*/
+/*}*/
+
+.manual-dialog {
+    margin: 0 -12px;
+    width: 395px !important;
+}
+
+.manual-dialog form {
+    padding-right: 12px;
+}
+
+.check-box-row {
+    border-bottom: 1px solid #CFD8DC;
+    /*height: 30px;*/
+}
+
+.check-box-row .k-edit-field {
+    margin-top: 10px;
+    float: left;
+    padding-left: 30px;
+    width: auto;
+}
+
+.check-box-row .k-edit-label {
+    max-width: 200px;
+}
+
+.check-box-row p label, .check-box-row div label {
+    font-weight: normal !important;
+    display: block;
+    float: left;
+}
+
+.check-box-row .selectize-control {
+    float: left;
+    margin-top: -5px;
+}
+
+.check-box-row p .k-textbox {
+    display: inline-block;
+    width: 100px !important;
+    max-width: 100px !important;
+    min-width: 100px !important;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.gantt_cal_light {
+    height: auto !important;
+}
+
+.gantt_cal_light select {
+    padding: 7px !important;
+}
+
+.gantt_cal_larea {
+    padding-bottom: 10px;
+    box-sizing: content-box;
+}
+
+.gantt_cal_light_wide.gantt_cal_light .gantt_section_time {
+    text-align: left !important;
+    height: auto !important;
+}
+
+.gantt_cal_light_wide.gantt_cal_light label {
+    white-space: nowrap;
+}
+
+.k-window .field label {
+    margin-bottom: 7px;
+}
+
+.k-window .field input {
+    line-height: 28px;
+    margin-top: 12px;
+}
+
+.selectize-input {
+    white-space: normal;
+}
+
+.k-window .selectize-input, .k-window input[type=text], .k-window textarea {
+    background: #ECEFF1 !important;
+}
+
+.k-window table td {
+    border-width: 0;
+}
+
+.k-window .toolbar {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    margin: 0 -15px -40px;
+}
+
+.toolbar {
+    text-align: right;
+}
+
+.toolbar .k-button, .toolbar .k-button:hover, .toolbar .k-button:active {
+    background: #B0BEC5;
+    font-size: 18px;
+}
+
+.toolbar .k-button.k-primary, .toolbar .k-button.k-primary:hover, .toolbar .k-button.k-primary:active {
+    background: #3f51b5;
+}
+
+.k-window .toolbar .right {
+    float: right;
+}
+
+.k-window .toolbar .left {
+    float: left;
+}
+
+.datepicker-dropdown {
+    width: 250px;
+}
+
+section.row {
+    max-width: 1000px !important;
+}
+
+.panel {
+    padding: 25px;
+    background: white;
+    box-shadow: 2px 2px 2px 0 #78909C;
+    margin-bottom: 25px;
+}
+
+.k-dropdown {
+    border-bottom: 1px solid #607D8B !important;
+    margin-top: 10px;
+}
